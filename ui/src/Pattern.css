@@ -1,0 +1,76 @@
+.pattern {
+    position: relative;
+}
+
+.pattern-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    min-height: 24px;
+    align-content: center;
+}
+
+.pattern-grid:not(.with-gap) {
+    border: 1px solid gray;
+    padding: 1px;
+    background-color: lightgray;
+}
+
+.pattern-cell {
+    width: 6px;
+    height: 6px;
+    box-sizing: border-box;
+}
+
+.with-gap .pattern-cell {
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+}
+
+.pattern-cell.dark {
+    background-color: black;
+}
+
+.pattern-cell.light {
+    background-color: white;
+}
+
+.pattern-cell.empty {
+    background-color: lightgray;
+}
+
+.with-gap .pattern-cell.light {
+    border: 1px solid gray;
+}
+
+.with-gap .pattern-cell.empty {
+    background-color: transparent;
+}
+
+.cross-out {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0.9;
+}
+
+.cross-out-left {
+    position: absolute;
+    margin-left: -16px;
+    margin-top: -1px;
+    width: 32px;
+    height: 2px;
+    transform: rotate(45deg);
+    background-color: red;
+}
+
+.cross-out-right {
+    position: absolute;
+    margin-left: -16px;
+    margin-top: -1px;
+    width: 32px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: red;
+}

@@ -1,0 +1,36 @@
+#root {
+  padding: 0;
+}
+
+.groups {
+  box-sizing: border-box;
+}
+
+.group-grids {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 20px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-heading {
+  font-size: 1.5em;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #eee;
+  padding-left: 10px;
+}
+
+.groups {
+  display: flex;
+  flex-direction: column;
+}
